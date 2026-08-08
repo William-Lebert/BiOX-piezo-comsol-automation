@@ -68,5 +68,5 @@ The solver writes material-specific MPH files, result CSV/JSON files, plots, and
 - Analytical prechecks are labelled as analytical and are never presented as finite-element results.
 - COMSOL is proprietary software. This repository contains no COMSOL installer, license, user profile, or runtime cache.
 
-No license file is included yet because the model, supplied data, scripts, and figures may have different redistribution rights. Confirm ownership and add an appropriate license before making the repository public.
+"The Python scripts in this repository are provided under the [MIT/Apache] License. The COMSOL model files are intended for academic reproduction purposes and require a valid COMSOL license to run."
 
