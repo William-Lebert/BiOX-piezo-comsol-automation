@@ -1,0 +1,4 @@
+﻿material,epsilon_mode,pressure_mpa,thickness_nm,derived_d33_C_per_N,derived_d33_pm_per_V,analytic_deltaV_V,analytic_deltaV_mV,pfm_max_amplitude_m,analytic_order,pfm_order,trend_matches_pfm,status
+BiOCl,prompt,100.0,5.0,1.35398941414e-14,0.0135398941414,5.82777363264e-05,0.0582777363264,1.54013e-09,BiOBr > BiOI > BiOCl,BiOI > BiOBr > BiOCl,False,analytic_precheck_not_comsol_result
+BiOBr,prompt,100.0,5.0,3.4177857082e-14,0.034177857082,0.000356556065642,0.356556065642,2.32126e-09,BiOBr > BiOI > BiOCl,BiOI > BiOBr > BiOCl,False,analytic_precheck_not_comsol_result
+BiOI,prompt,100.0,5.0,2.76015521779e-14,0.0276015521779,0.000249907250354,0.249907250354,3.13165e-09,BiOBr > BiOI > BiOCl,BiOI > BiOBr > BiOCl,False,analytic_precheck_not_comsol_result

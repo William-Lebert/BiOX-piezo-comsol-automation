@@ -1,0 +1,18 @@
+{
+  "status": "comsol_merged",
+  "rows": 6,
+  "interpretation": [
+    "BiOBr remains first in deltaV and top-surface |Ez| for both dielectric conventions.",
+    "Top-surface |Pz| is independent of dielectric convention because it is set by e and strain.",
+    "Absolute electric field is dielectric-screening sensitive; report the convention explicitly.",
+    "Static local piezopotential is a mechanism descriptor, not a direct photocatalytic rate or open-circuit voltage."
+  ],
+  "data_quality_flags": [
+    "The e tensor source and coordinate convention remain to be confirmed.",
+    "The snapshot uses a mixed prompt dielectric convention; the two uniform modes are the defensible sensitivity bounds.",
+    "A four-point total-dielectric pressure sweep is complete; experimental load validation and a geometry/thickness study remain pending."
+  ],
+  "csv": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Phase2\\analysis\\phase2_mechanism_summary.csv",
+  "figure": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Phase2\\analysis\\phase2_mechanism_summary.png",
+  "figure_backend": "Pillow fallback"
+}

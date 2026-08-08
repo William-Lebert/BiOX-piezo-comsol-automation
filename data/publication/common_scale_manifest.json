@@ -1,0 +1,21 @@
+{
+  "status": "exported",
+  "source": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\runs\\prompt_p100_t5",
+  "potential_scale_uV": [
+    -177.0,
+    177.0
+  ],
+  "stress_scale_MPa": [
+    0.0,
+    175.0
+  ],
+  "titles": "off",
+  "outputs": [
+    "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOCl_potential_common_-177_177uV.png",
+    "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOCl_stress_common_0_175MPa.png",
+    "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOBr_potential_common_-177_177uV.png",
+    "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOBr_stress_common_0_175MPa.png",
+    "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOI_potential_common_-177_177uV.png",
+    "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOI_stress_common_0_175MPa.png"
+  ]
+}

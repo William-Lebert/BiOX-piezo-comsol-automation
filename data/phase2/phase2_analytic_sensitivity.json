@@ -1,0 +1,32 @@
+{
+  "status": "analytic_only",
+  "materials": [
+    "BiOCl",
+    "BiOBr",
+    "BiOI"
+  ],
+  "epsilon_modes": [
+    "prompt",
+    "vasp-electronic",
+    "vasp-total"
+  ],
+  "pressures_mpa": [
+    10.0,
+    25.0,
+    50.0,
+    100.0,
+    200.0
+  ],
+  "thicknesses_nm": [
+    5.0,
+    10.0,
+    20.0
+  ],
+  "rows": 135,
+  "data_quality_flags": [
+    "e31/e32/e33 in the snapshot are user-supplied and require a traceable source.",
+    "The dielectric convention is intentionally varied because the snapshot mixes conventions.",
+    "Analytic scaling assumes linear elasticity and small deformation; it is not a COMSOL solve."
+  ],
+  "csv": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Phase2\\analysis\\phase2_analytic_sensitivity.csv"
+}

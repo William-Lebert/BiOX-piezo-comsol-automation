@@ -1,0 +1,290 @@
+【BiOX_COMSOL_Codex_Final_Prompt】
+
+任务名称：
+BiOX（BiOCl/BiOBr/BiOI）二维纳米片压电有限元自动化模拟
+
+====================
+一、软件环境
+====================
+
+COMSOL Multiphysics 6.3
+
+自动化方式：
+Python + MPh + COMSOL Java API
+
+Java解释器：
+D:\Puxiaoyu\COMSOL\COMSOL63\Multiphysics\java\win64\jre\bin\java.exe
+
+要求：
+使用COMSOL Java API完成模型创建、参数修改、求解调用和结果导出。
+
+====================
+二、总体目标
+====================
+
+建立BiOX二维纳米片压电有限元模型。
+
+计算：
+1. 压电势分布 V
+2. Vmax
+3. Vmin
+4. ΔV=Vmax-Vmin
+5. 有效压电响应
+
+最终比较：
+BiOCl / BiOBr / BiOI
+
+研究路线：
+
+DFT参数
+→ COMSOL有限元
+→ PFM实验验证
+
+====================
+三、当前模型状态
+====================
+
+已有文件：
+
+BiOCl_piezo.mph
+
+不要重新设计。
+
+已有：
+- 3D纳米片几何
+- Solid Mechanics
+- Electrostatics
+- Piezoelectric Effect
+- 材料参数
+- 稳态求解
+
+当前问题：
+
+计算后V≈0。
+
+优先检查：
+
+1. Boundary Load是否加载在顶部z面；
+2. Fixed Constraint是否加载在底部；
+3. 是否产生z方向应力T3。
+
+必须保证：
+
+D3=e33*T3
+
+====================
+四、建模要求
+====================
+
+纳米片：
+
+100 nm × 100 nm × 数nm
+
+机械边界：
+
+顶部：
+施加z方向压力
+
+底部：
+固定约束
+
+
+静电：
+
+只保留Ground
+
+禁止设置1 V外加电势。
+
+====================
+五、材料输入原则
+====================
+
+禁止使用人为假设d33。
+
+必须使用DFT获得：
+
+Cij
+eij
+epsilon tensor
+
+====================
+六、DFT材料数据库
+====================
+
+BiOCl：
+
+epsilon:
+[50.163,50.163,13.120]
+
+e:
+[-3.2e-4,2.0e-4,5.0e-4]
+
+C(GPa):
+136.12 69.81 36.90
+69.81 136.12 36.90
+36.90 36.90 51.74
+60.57
+26.22
+26.22
+
+
+BiOBr：
+
+epsilon:
+[7.349,7.349,5.413]
+
+e:
+[-4.1e-4,8.0e-5,6.9e-4]
+
+C(GPa):
+119.41 58.99 23.29
+58.99 119.41 23.29
+23.29 23.29 27.53
+53.92
+20.87
+20.87
+
+
+BiOI：
+
+epsilon:
+[8.819,8.819,6.237]
+
+e:
+[-4.9e-4,-2.0e-5,6.7e-4]
+
+C(GPa):
+104.40 43.26 17.43
+43.26 104.40 17.43
+17.43 17.43 30.57
+43.63
+15.22
+15.22
+
+
+====================
+七、PFM实验验证
+====================
+
+实验文件：
+
+BiOX_PFM.xlsx
+
+PFM最大响应：
+
+BiOCl:
+1.54e-9
+
+BiOBr:
+2.32e-9
+
+BiOI:
+3.13e-9
+
+
+实验趋势：
+
+BiOI > BiOBr > BiOCl
+
+
+COMSOL结果应尽量保持该趋势。
+
+====================
+八、执行流程
+====================
+
+Stage 1:
+
+修复BiOCl模型。
+
+要求：
+- 正确边界
+- 正确材料
+- 成功求解
+- 输出电势云图
+
+
+Stage 2:
+
+复制模型：
+
+BiOCl_piezo
+→ BiOBr_piezo
+→ BiOI_piezo
+
+
+替换材料参数。
+
+
+Stage 3:
+
+输出：
+
+Vmax
+Vmin
+ΔV
+
+三材料比较。
+
+
+====================
+九、自动Debug要求
+====================
+
+必须：
+
+1. 编写脚本；
+2. 实际运行；
+3. 根据COMSOL错误自动修改；
+4. 直到模型正常运行。
+
+
+====================
+十、最终输出
+====================
+
+需要生成：
+
+1. COMSOL模型：
+BiOCl_piezo_final.mph
+BiOBr_piezo_final.mph
+BiOI_piezo_final.mph
+
+2. Python/MPh自动化脚本
+
+3. docx仿真报告
+
+报告包括：
+- 建模过程
+- DFT参数
+- 边界条件
+- 网格
+- 求解
+- 结果分析
+- PFM验证
+
+
+====================
+十一、参考文档
+====================
+备注：下面这些路径的文档是COMSOL官方提供的脚本文件参考文档，你可以选择学习其中有价值的，以及遇到问题可以去其中检索：
+
+[ApplicationProgrammingGuide.pdf](D:\Puxiaoyu\COMSOL\COMSOL63\Multiphysics\doc\pdf\COMSOL_Multiphysics\ApplicationProgrammingGuide.pdf)
+适合让 AI 理解 COMSOL Java API 的编写流程、建模步骤、调用方式、自动化思路。
+
+[COMSOL_ProgrammingReferenceManual.pdf](D:\Puxiaoyu\COMSOL\COMSOL63\Multiphysics\doc\pdf\COMSOL_Multiphysics\COMSOL_ProgrammingReferenceManual.pdf)这是更偏“命令/对象/接口参考”的手册，写自动仿真代码时很关键。
+
+[api\\index.html](D:\Puxiaoyu\COMSOL\COMSOL63\Multiphysics\doc\help\wtpwebapps\ROOT\doc\com.comsol.help.comsol\api\index.html)
+这是一整套本地 Java API 文档入口，下面有大约 497 个文件，属于 Javadoc 风格的 API 参考。
+
+[ModelUtil.html](D:\Puxiaoyu\COMSOL\COMSOL63\Multiphysics\doc\help\wtpwebapps\ROOT\doc\com.comsol.help.comsol\api\com\comsol\model\util\ModelUtil.html)这是 COMSOL Java API 里非常核心的入口类文档。
+
+
+
+最终目标：
+完成BiOCl/BiOBr/BiOI三种二维纳米片压电模拟自动化流程。
+
+最后，在你完成所有的优化后：
+1、把最后的优化完成的结果，保存为一个COMSOL仿真文件让我来检验。
+2、撰写一份详细的仿真报告，格式为docx，包括详细的仿真过程和仿真结果。
+

@@ -1,0 +1,28 @@
+{
+  "status": "created",
+  "units": "microvolt",
+  "bar_figure": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOX_DeltaV_100MPa_zero_baseline.png",
+  "pressure_figure": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOX_DeltaV_pressure_0_100MPa.png",
+  "data": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOX_DeltaV_pressure_0_100MPa.csv",
+  "regression": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\Codex_BiOX_Publication_Figures\\figures\\BiOX_DeltaV_pressure_regression.csv",
+  "fits": [
+    {
+      "material": "BiOCl",
+      "slope_uV_per_MPa": 0.5356521523575165,
+      "intercept_uV": -3.552713678800501e-15,
+      "r2": 1.0
+    },
+    {
+      "material": "BiOBr",
+      "slope_uV_per_MPa": 3.535897340110762,
+      "intercept_uV": 0.0,
+      "r2": 1.0
+    },
+    {
+      "material": "BiOI",
+      "slope_uV_per_MPa": 2.4690539907170415,
+      "intercept_uV": -1.4210854715202004e-14,
+      "r2": 1.0
+    }
+  ]
+}
