@@ -32,20 +32,48 @@ def set_if_supported(node, key: str, value) -> None:
         pass
 
 
+def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
+    filename = "arialbd.ttf" if bold else "arial.ttf"
+    try:
+        return ImageFont.truetype(str(Path("C:/Windows/Fonts") / filename), size)
+    except OSError:
+        return ImageFont.load_default()
+
+
+def y_for_value(value: float, low: float, high: float,
+                top: int = 106, bottom: int = 1176) -> float:
+    return top + (high - value) * (bottom - top) / (high - low)
+
+
 def annotate_colorbar(output: Path, kind: str) -> None:
     image = Image.open(output).convert("RGB")
     draw = ImageDraw.Draw(image)
-    font_path = Path("C:/Windows/Fonts/arial.ttf")
-    try:
-        label_font = ImageFont.truetype(str(font_path), 26)
-    except OSError:
-        label_font = ImageFont.load_default()
+
+    # Preserve the COMSOL colorbar and tick marks; replace only its text.
+    draw.rectangle((1740, 0, 1999, 104), fill="white")
+    draw.rectangle((1888, 105, 1999, 1176), fill="white")
+    draw.rectangle((1740, 1177, 1999, 1249), fill="white")
+
+    endpoint_font = font(42, bold=True)
+    tick_font = font(34)
     if kind == "potential":
-        draw.text((1810, 54), "+177 μV", fill="#111111", font=label_font)
-        draw.text((1804, 1182), "−177 μV", fill="#111111", font=label_font)
+        low, high = -177.0, 177.0
+        ticks = [150, 100, 50, 0, -50, -100, -150]
+        draw.text((1868, 61), "+177 μV", fill="#111111",
+                  font=endpoint_font, anchor="mm")
+        draw.text((1868, 1207), "-177 μV", fill="#111111",
+                  font=endpoint_font, anchor="mm")
     else:
-        draw.text((1818, 54), "175 MPa", fill="#111111", font=label_font)
-    image.save(output, dpi=(200, 200))
+        low, high = 0.0, 175.0
+        ticks = [160, 140, 120, 100, 80, 60, 40, 20, 0]
+        draw.text((1868, 61), "175 MPa", fill="#111111",
+                  font=endpoint_font, anchor="mm")
+
+    for value in ticks:
+        draw.text((1905, y_for_value(value, low, high)), str(value),
+                  fill="#111111", font=tick_font, anchor="lm")
+
+    image.save(output, dpi=(200, 200), optimize=True)
 
 
 def export_plot(base, jmodel, material: str, figure_dir: Path,
@@ -71,14 +99,14 @@ def export_plot(base, jmodel, material: str, figure_dir: Path,
         surface.set("colorscalemode", "linearsymmetric")
         surface.set("rangecolormin", -POTENTIAL_LIMIT_UV)
         surface.set("rangecolormax", POTENTIAL_LIMIT_UV)
-        filename = f"{material}_potential_common_-177_177uV.png"
+        filename = f"{material}_potential_common_-177_177uV_large_labels.png"
     else:
         surface.set("expr", "solid.mises")
         surface.set("unit", "MPa")
         surface.set("colortable", "Thermal")
         surface.set("rangecolormin", 0.0)
         surface.set("rangecolormax", STRESS_MAX_MPA)
-        filename = f"{material}_stress_common_0_175MPa.png"
+        filename = f"{material}_stress_common_0_175MPa_large_labels.png"
     group.run()
 
     exports = results.export()
@@ -104,9 +132,9 @@ def export_plot(base, jmodel, material: str, figure_dir: Path,
 
 
 def main() -> int:
-    root = Path(__file__).resolve().parent
-    base = load_base(root / "inputs" / "biox_comsol_automation_base.py")
-    source_dir = root / "runs" / "prompt_p100_t5"
+    root = Path(__file__).resolve().parent.parent
+    base = load_base(root / "src" / "biox_comsol_automation.py")
+    source_dir = root / "comsol_run"
     figure_dir = root / "figures"
     figure_dir.mkdir(parents=True, exist_ok=True)
 
@@ -133,13 +161,14 @@ def main() -> int:
 
     manifest = {
         "status": "exported",
-        "source": str(source_dir),
+        "source": "comsol_run/*_piezo_final.mph",
         "potential_scale_uV": [-POTENTIAL_LIMIT_UV, POTENTIAL_LIMIT_UV],
         "stress_scale_MPa": [0.0, STRESS_MAX_MPA],
         "titles": "off",
-        "outputs": outputs,
+        "outputs": [str(Path(path).relative_to(root)).replace("\\", "/")
+                    for path in outputs],
     }
-    manifest_path = figure_dir / "common_scale_manifest.json"
+    manifest_path = root / "data" / "common_scale_manifest.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2),
                              encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))

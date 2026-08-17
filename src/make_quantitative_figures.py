@@ -143,35 +143,24 @@ def linear_regression(x: list[float], y: list[float]) -> tuple[float, float, flo
 
 
 def main() -> int:
-    root = Path(__file__).resolve().parent
+    root = Path(__file__).resolve().parent.parent
     figure_dir = root / "figures"
-    run_dir = root / "runs"
+    result_dir = root / "data"
     figure_dir.mkdir(parents=True, exist_ok=True)
-    source_100 = run_dir / "prompt_p100_t5" / "BiOX_COMSOL_results.csv"
-    run_paths = {
-        20.0: run_dir / "prompt_p20_t5" / "BiOX_COMSOL_results.csv",
-        40.0: run_dir / "prompt_p40_t5" / "BiOX_COMSOL_results.csv",
-        60.0: run_dir / "prompt_p60_t5" / "BiOX_COMSOL_results.csv",
-        80.0: run_dir / "prompt_p80_t5" / "BiOX_COMSOL_results.csv",
-        100.0: source_100,
-    }
+    source_100 = result_dir / "benchmark_100MPa.csv"
     values_100 = read_results(source_100)
-    rows: list[dict[str, float | str]] = []
-    for material in MATERIALS:
-        rows.append({"material": material, "pressure_mpa": 0.0,
-                     "delta_v_uV": 0.0, "source": "exact unloaded baseline"})
-    for pressure, path in run_paths.items():
-        values = read_results(path)
-        for material in MATERIALS:
-            rows.append({"material": material, "pressure_mpa": pressure,
-                         "delta_v_uV": values[material], "source": str(path)})
+    pressure_data = result_dir / "pressure_sweep_0_100MPa.csv"
+    with pressure_data.open(newline="", encoding="utf-8-sig") as stream:
+        rows = [
+            {
+                "material": row["material"],
+                "pressure_mpa": float(row["pressure_mpa"]),
+                "delta_v_uV": float(row["delta_v_uV"]),
+                "source": row["source"],
+            }
+            for row in csv.DictReader(stream)
+        ]
     rows.sort(key=lambda row: (str(row["material"]), float(row["pressure_mpa"])))
-
-    data_path = figure_dir / "BiOX_DeltaV_pressure_0_100MPa.csv"
-    with data_path.open("w", newline="", encoding="utf-8-sig") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
-        writer.writeheader()
-        writer.writerows(rows)
 
     fits = []
     for material in MATERIALS:
@@ -181,7 +170,7 @@ def main() -> int:
         slope, intercept, r2 = linear_regression(x, y)
         fits.append({"material": material, "slope_uV_per_MPa": slope,
                      "intercept_uV": intercept, "r2": r2})
-    fit_path = figure_dir / "BiOX_DeltaV_pressure_regression.csv"
+    fit_path = result_dir / "pressure_regression.csv"
     with fit_path.open("w", newline="", encoding="utf-8-sig") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(fits[0]))
         writer.writeheader()
@@ -194,13 +183,13 @@ def main() -> int:
     manifest = {
         "status": "created",
         "units": "microvolt",
-        "bar_figure": str(bar_path),
-        "pressure_figure": str(pressure_path),
-        "data": str(data_path),
-        "regression": str(fit_path),
+        "bar_figure": "figures/BiOX_DeltaV_100MPa_zero_baseline.png",
+        "pressure_figure": "figures/BiOX_DeltaV_pressure_0_100MPa.png",
+        "data": "data/pressure_sweep_0_100MPa.csv",
+        "regression": "data/pressure_regression.csv",
         "fits": fits,
     }
-    manifest_path = figure_dir / "quantitative_manifest.json"
+    manifest_path = result_dir / "quantitative_manifest.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2),
                              encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
