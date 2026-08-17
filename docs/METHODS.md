@@ -54,7 +54,7 @@ The `prompt` mode mixes dielectric conventions across the material series and is
 
 ## Figure conventions
 
-Shared-scale potential maps use -177 to +177 $\mu$V. Shared-scale stress maps use 0-175 MPa. These fixed limits permit direct visual comparison without rescaling the underlying data. The independent-scale potential panel is included only to resolve within-material spatial structure. Quantitative plots begin at zero and use the original calculated values.
+Shared-scale out-of-plane normal strain maps use -0.8 to 0% and display $100\varepsilon_{zz}$; negative values denote compression along the loading direction. This range was obtained by pooling the extrema from all three 100 MPa solutions, including zero, and rounding outward to 0.2% ticks. Shared-scale potential maps use -177 to +177 $\mu$V, and shared-scale stress maps use 0-175 MPa. These fixed limits permit direct visual comparison without rescaling or clipping the underlying data. The independent-scale potential panel is included only to resolve within-material spatial structure. Quantitative plots begin at zero and use the original calculated values.
 
 ## PFM reporting boundary
 

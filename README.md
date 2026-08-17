@@ -40,9 +40,11 @@ The absolute magnitude is sensitive to the dielectric convention, whereas the or
 
 ## Field visualization
 
-The centered potential maps use a common range of -177 to +177 $\mu$V so that color intensity has the same meaning for all three compounds. Independent-scale maps are also provided for inspecting spatial patterns, but they should not be used to compare response magnitude. Stress maps share a 0-175 MPa range.
+The six-panel figure combines the out-of-plane normal strain fields, $\varepsilon_{zz}$ (a-c), and centered piezopotential fields (d-f) for BiOCl, BiOBr, and BiOI at 100 MPa. A single -0.8 to 0% strain scale is used across panels (a-c), and a single -177 to +177 $\mu$V scale is used across panels (d-f). Color intensity can therefore be compared directly within each row.
 
-![Independent-scale potential comparison](figures/BiOX_potential_independent_scales.png)
+![Shared-scale strain and piezopotential comparison](figures/BiOX_strain_potential_common_scales.png)
+
+Strain is reported as a percentage, with negative values denoting compression along the loading direction. The -0.8 to 0% limits contain the extrema of all three solved models and include the unloaded zero-strain reference; no material-dependent rescaling or data clipping is applied.
 
 ## Experimental context
 
@@ -76,6 +78,8 @@ Use `--epsilon-mode vasp-electronic` or `--epsilon-mode vasp-total` for a consis
 python src/make_quantitative_figures.py
 python src/create_independent_scale_figure.py
 python src/make_dielectric_sensitivity_figure.py
+python src/export_common_scale_strain_figures.py --model-dir path\to\solved_models --comsol-root path\to\COMSOL63\Multiphysics
+python src/make_common_scale_strain_potential_composite.py
 ```
 
 `export_common_scale_figures.py` requires COMSOL-generated `.mph` files in the selected calculation output directory and reproduces the shared-scale field maps.
@@ -106,4 +110,10 @@ See [METHODS.md](docs/METHODS.md) and [INTERPRETATION_AND_LIMITATIONS.md](docs/I
 
 ## Citation and reuse
 
-When using this workflow, cite the repository version, COMSOL Multiphysics version, and the primary source of every material tensor. No license is imposed in this update package; retain the license of the existing GitHub repository or add an appropriate license before redistribution.
+When using this workflow, cite the repository version, the COMSOL Multiphysics version, and the primary source of every material tensor. Please retain the original data-source citations when reusing numerical tables or figures.
+
+## License
+
+The Python scripts and repository documentation are provided under the [MIT License](LICENSE). The COMSOL model files are intended for academic reproduction purposes and require a valid COMSOL license to run.
+
+COMSOL Multiphysics is proprietary software and is not redistributed with this repository. Users must obtain and activate a valid COMSOL license independently.

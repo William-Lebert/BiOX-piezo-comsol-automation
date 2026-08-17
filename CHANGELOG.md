@@ -4,6 +4,7 @@
 
 - Reorganized the public package around source, configuration, numerical data, figures, and methods documentation.
 - Added the electronic-versus-total dielectric sensitivity analysis.
+- Added COMSOL-derived $\varepsilon_{zz}$ maps and a six-panel shared-scale strain-piezopotential comparison.
 - Documented the mixed dielectric convention in the historical reference dataset.
 - Clarified the distinction between pressure-driven FEM and voltage-driven PFM.
 - Removed machine-specific paths from the public data package.

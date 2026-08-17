@@ -14,9 +14,11 @@ In `benchmark_100MPa.csv`, `delta_v_mv` is expressed in millivolts despite the l
 
 ## Image data
 
-`data/raw_potential_maps/` contains the three zero-centered potential maps exported from COMSOL before assembly into the independent-scale comparison. These raster exports are retained because the proprietary `.mph` binaries are excluded from the repository.
+`data/raw_potential_maps/` contains the zero-centered potential maps exported from COMSOL before figure assembly. These raster exports are retained because the proprietary `.mph` binaries are excluded from the repository.
 
-`figures/` contains the final shared-scale stress and potential maps, the zero-baseline 100 MPa comparison, the pressure-response curves, the independent-scale potential panel, and the dielectric-convention sensitivity plot.
+`data/common_scale_strain_manifest.json` records the raw $\varepsilon_{zz}$ extrema, the shared percentage scale, and the COMSOL-exported strain image paths.
+
+`figures/` contains the final shared-scale stress, strain, and potential maps, the zero-baseline 100 MPa comparison, the pressure-response curves, the six-panel shared-scale strain-potential comparison, and the dielectric-convention sensitivity plot.
 
 ## Configuration
 
