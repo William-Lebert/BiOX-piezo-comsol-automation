@@ -24,8 +24,8 @@ from typing import Any, Iterable, Sequence
 
 EPS0 = 8.8541878128e-12
 EXPECTED_PFM_ORDER = ["BiOI", "BiOBr", "BiOCl"]
-DEFAULT_INPUT = Path(r"C:\Users\濮晓宇\Desktop\BiOCl_piezo.mph")
-DEFAULT_COMSOL_ROOT = Path(r"D:\Puxiaoyu\COMSOL\COMSOL63\Multiphysics")
+DEFAULT_INPUT = Path("BiOCl_piezo.mph")
+DEFAULT_COMSOL_ROOT = Path("COMSOL63") / "Multiphysics"
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 
@@ -649,7 +649,11 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Repair and solve BiOCl/BiOBr/BiOI piezoelectric COMSOL models.")
     parser.add_argument("--input-mph", type=Path, default=DEFAULT_INPUT)
-    parser.add_argument("--config", type=Path, default=SCRIPT_DIR / "biox_materials.json")
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=SCRIPT_DIR.parent / "config" / "biox_materials.json",
+    )
     parser.add_argument("--output-dir", type=Path, default=SCRIPT_DIR / "comsol_run")
     parser.add_argument("--comsol-root", type=Path, default=DEFAULT_COMSOL_ROOT)
     parser.add_argument("--comsol-version", default="6.3")

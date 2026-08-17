@@ -1,21 +1,26 @@
-# Python artifacts
-__pycache__/
-*.py[cod]
+# COMSOL models and runtime output
+*.mph
+*.mphbin
+*.lic
+*.log
+comsol_run/
+runtime/
+recovery/
+
+# Local Python environments and caches
+.python_deps/
 .venv/
 venv/
+__pycache__/
+*.py[cod]
 
-# Generated COMSOL and analysis outputs
-outputs/
-runtime/
-recoveries/
-*.mph.lock
-*.mph~
-# Logs under outputs/runtime are ignored by their parent folders. Curated
-# baseline and phase-2 logs under data/ remain trackable.
+# Source literature and temporary exports
+references/
+*.zip
+tmp/
 
-# Local editor and operating-system files
-.idea/
+# Editor and operating-system files
 .vscode/
-*.user
+.idea/
+.DS_Store
 Thumbs.db
-Desktop.ini
