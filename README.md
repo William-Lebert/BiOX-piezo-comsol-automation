@@ -192,3 +192,12 @@ The Python source is distributed under the MIT License. COMSOL Multiphysics is
 proprietary software; a valid COMSOL 6.3 license and the required physics
 interfaces are needed to execute the MPH workflow. No COMSOL installer,
 license file, user profile, or runtime cache is included here.
+
+## Citation
+
+If you use this software, please cite:
+
+Pu, Xiaoyu. (2026).
+BiOX Piezoelectric COMSOL Automation v1.3.2.
+Zenodo.
+https://doi.org/10.5281/zenodo.22259442
