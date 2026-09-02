@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+
+message: "If you use this software, please cite it as below."
+
+title: "BiOX Piezoelectric COMSOL Automation"
+
+version: "v1.3.0"
+
+type: software
+
+abstract: >
+  A reproducible COMSOL Multiphysics workflow for comparative
+  BiOX (BiOCl/BiOBr/BiOI) piezoelectric modeling, including
+  direct piezoelectric response, converse piezoelectric response,
+  PFM simulation, and DFT-apparent parameter calibration.
+
+authors:
+  - family-names: "Pu"
+    given-names: "Xiaoyu"
+    email: "xiaoyu.pu.env@outlook.com"
+
+license: "MIT"
+
+repository-code: "https://github.com/William-Lebert/BiOX-piezo-comsol-automation"
+
+url: "https://github.com/William-Lebert/BiOX-piezo-comsol-automation"
+
+date-released: "2026-09-03"
+
+keywords:
+  - COMSOL Multiphysics
+  - piezoelectricity
+  - BiOX
+  - BiOCl
+  - BiOBr
+  - BiOI
+  - PFM
+  - DFT
+  - computational materials science
