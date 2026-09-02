@@ -1,0 +1,30 @@
+{
+  "status": "comsol_exported",
+  "quantity": "out-of-plane normal strain, solid.eZZ",
+  "display_unit": "%",
+  "source_models": "user-supplied calculation directory/*_piezo_final.mph",
+  "raw_extrema": {
+    "BiOCl": {
+      "minimum": -0.003548714041043137,
+      "maximum": -0.0013125440872560857
+    },
+    "BiOBr": {
+      "minimum": -0.0064900908046330395,
+      "maximum": -0.0027114590007149275
+    },
+    "BiOI": {
+      "minimum": -0.004957406304247856,
+      "maximum": -0.0026793242471055533
+    }
+  },
+  "common_scale_percent": [
+    -0.8,
+    0.0
+  ],
+  "tick_step_percent": 0.2,
+  "outputs": [
+    "figures/BiOCl_strain_ezz_common.png",
+    "figures/BiOBr_strain_ezz_common.png",
+    "figures/BiOI_strain_ezz_common.png"
+  ]
+}

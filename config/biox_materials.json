@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "model": {
+    "length_nm": 100.0,
+    "width_nm": 100.0,
+    "thickness_nm": 5.0,
+    "pressure_mpa": 100.0,
+    "mesh_hmax_nm": 10.0,
+    "mesh_hmin_nm": 1.25,
+    "selection_tolerance_nm": 0.05
+  },
+  "assumptions": {
+    "piezoelectric_vector_mapping": "The three supplied e values are interpreted as [e31, e32, e33] in C/m^2; all other entries of the 3x6 eES matrix are zero.",
+    "constitutive_form": "COMSOL stress-charge form: T = cE*S - transpose(eES)*E; D = eES*S + epsilon0*epsilonrS*E.",
+    "dielectric_default": "prompt",
+    "load_case": "Uniform follower pressure on the top z face; the bottom z face is fixed and grounded; all other electrostatic boundaries use zero charge.",
+    "reference_effect": "The 2026 ZnO/BiOCl paper is used only as a presentation reference (3D stress and centered potential maps under 100 MPa), not as a quantitative target or heterojunction geometry specification."
+  },
+  "materials": {
+    "BiOCl": {
+      "epsilon_prompt": [50.163, 50.163, 13.12],
+      "epsilon_vasp_electronic": [6.568797, 6.568797, 5.224847],
+      "epsilon_vasp_total": [50.163057, 50.163057, 13.119965],
+      "e31_e32_e33_c_per_m2": [-0.00032, 0.0002, 0.0005],
+      "c_gpa": [
+        [136.12, 69.81, 36.9, 0.0, 0.0, 0.0],
+        [69.81, 136.12, 36.9, 0.0, 0.0, 0.0],
+        [36.9, 36.9, 51.74, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 60.57, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 26.22, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 26.22]
+      ],
+      "pfm_max_amplitude_m": 1.54013e-9,
+      "source_note": "C and epsilon_prompt match the supplied prompt. The extracted VASP piezoelectric tensors are zero, so the nonzero e vector is user-supplied and not traceable to the provided ZIP."
+    },
+    "BiOBr": {
+      "epsilon_prompt": [7.349, 7.349, 5.413],
+      "epsilon_vasp_electronic": [7.34935, 7.34935, 5.412787],
+      "epsilon_vasp_total": [50.682635, 50.682635, 9.962056],
+      "e31_e32_e33_c_per_m2": [-0.00041, 0.00008, 0.00069],
+      "c_gpa": [
+        [119.41, 58.99, 23.29, 0.0, 0.0, 0.0],
+        [58.99, 119.41, 23.29, 0.0, 0.0, 0.0],
+        [23.29, 23.29, 27.53, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 53.92, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 20.87, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 20.87]
+      ],
+      "pfm_max_amplitude_m": 2.32126e-9,
+      "source_note": "C matches the supplied VASP ZIP. epsilon_prompt uses only the electronic dielectric tensor, while the VASP total tensor is much larger. The extracted VASP piezoelectric tensors are zero."
+    },
+    "BiOI": {
+      "epsilon_prompt": [8.819, 8.819, 6.237],
+      "epsilon_vasp_electronic": [8.819431, 8.819431, 6.236875],
+      "epsilon_vasp_total": [54.979089, 54.979089, 9.527937],
+      "e31_e32_e33_c_per_m2": [-0.00049, -0.00002, 0.00067],
+      "c_gpa": [
+        [104.4, 43.26, 17.43, 0.0, 0.0, 0.0],
+        [43.26, 104.4, 17.43, 0.0, 0.0, 0.0],
+        [17.43, 17.43, 30.57, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 43.63, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 15.22, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 15.22]
+      ],
+      "pfm_max_amplitude_m": 3.13165e-9,
+      "source_note": "C matches the supplied VASP ZIP. epsilon_prompt uses only the electronic dielectric tensor, while the VASP total tensor is much larger. The extracted VASP piezoelectric tensors are zero."
+    }
+  },
+  "reference_paper": {
+    "title": "Interfacial piezoelectric potential-enhanced Z-scheme charge separation in ZnO/BiOCl heterojunctions for ultrafast antibiotic degradation",
+    "journal": "Chemical Engineering Journal 530 (2026) 173484",
+    "doi": "10.1016/j.cej.2026.173484",
+    "reported_pressure_mpa": 100.0,
+    "reported_biocl_delta_v_v": 0.0485,
+    "use": "presentation benchmark only"
+  }
+}
