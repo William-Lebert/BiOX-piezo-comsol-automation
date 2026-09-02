@@ -1,0 +1,72 @@
+{
+  "status": "precheck_complete",
+  "source": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\BiOX_COMSOL_Source Code\\BiOX_Piezoelectric_COMSOL_v1.3.0\\config\\materials_dft_apparent.json",
+  "model_config": "D:\\Puxiaoyu\\COMSOL\\COMSOL63\\BiOX_COMSOL_Source Code\\BiOX_Piezoelectric_COMSOL_v1.3.0\\config\\model_v13_apparent_dft.json",
+  "effective_thickness_nm": 1.0,
+  "intrinsic_d11_order": [],
+  "pfm_target_order": [
+    "BiOI",
+    "BiOBr",
+    "BiOCl"
+  ],
+  "expected_pfm_order": [
+    "BiOI",
+    "BiOBr",
+    "BiOCl"
+  ],
+  "intrinsic_order_matches_pfm": false,
+  "pfm_order_matches_target": true,
+  "pfm_relative_targets": {
+    "BiOCl": 1.0,
+    "BiOBr": 1.5139896164612252,
+    "BiOI": 2.057797660464816
+  },
+  "rows": [
+    {
+      "material": "BiOCl",
+      "d11_reported_pm_per_V": "not_applicable",
+      "d11_derived_pm_per_V": "not_applicable",
+      "d31_reported_pm_per_V": "not_applicable",
+      "d31_derived_pm_per_V": "not_applicable",
+      "pfm_d33_app_pm_per_V": "315.7109605",
+      "pfm_sd_pm_per_V": "6.1263253",
+      "pfm_relative_to_BiOCl": "1",
+      "effective_thickness_nm": "1",
+      "epsilon_status": "DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved",
+      "effective_c11_Pa": "1.3611658e+11",
+      "effective_e31_C_per_m2": "0",
+      "epsilon_r_zz": "13.119965"
+    },
+    {
+      "material": "BiOBr",
+      "d11_reported_pm_per_V": "not_applicable",
+      "d11_derived_pm_per_V": "not_applicable",
+      "d31_reported_pm_per_V": "not_applicable",
+      "d31_derived_pm_per_V": "not_applicable",
+      "pfm_d33_app_pm_per_V": "477.983116",
+      "pfm_sd_pm_per_V": "6.7741138",
+      "pfm_relative_to_BiOCl": "1.513989616",
+      "effective_thickness_nm": "1",
+      "epsilon_status": "DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved",
+      "effective_c11_Pa": "1.1941225e+11",
+      "effective_e31_C_per_m2": "0",
+      "epsilon_r_zz": "9.962056"
+    },
+    {
+      "material": "BiOI",
+      "d11_reported_pm_per_V": "not_applicable",
+      "d11_derived_pm_per_V": "not_applicable",
+      "d31_reported_pm_per_V": "not_applicable",
+      "d31_derived_pm_per_V": "not_applicable",
+      "pfm_d33_app_pm_per_V": "649.6692759",
+      "pfm_sd_pm_per_V": "9.3258394",
+      "pfm_relative_to_BiOCl": "2.05779766",
+      "effective_thickness_nm": "1",
+      "epsilon_status": "DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved",
+      "effective_c11_Pa": "1.0439785e+11",
+      "effective_e31_C_per_m2": "0",
+      "epsilon_r_zz": "9.527937"
+    }
+  ],
+  "interpretation": "For the legacy branch, d11 is a 2D consistency check. For the DFT-apparent branch, C^E and dielectric data are first-principles inputs and d33_app is a response-level closure; neither branch should be reported as an intrinsic bulk d33 calibration."
+}

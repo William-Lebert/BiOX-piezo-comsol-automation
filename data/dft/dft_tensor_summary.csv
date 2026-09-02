@@ -1,0 +1,4 @@
+material,C11_GPa,C12_GPa,C13_GPa,C33_GPa,C44_GPa,C66_GPa,epsilon_electronic_xx,epsilon_electronic_zz,epsilon_ionic_xx,epsilon_ionic_zz,epsilon_low_frequency_xx,epsilon_low_frequency_zz,d33_app_pm_per_V,e33_app_C_per_m2,dft_total_piezo_status
+BiOCl,136.11658,69.81427,36.90113,51.73502,26.22390,60.57410,6.568797,5.224847,43.594260,7.895118,50.163057,13.119965,315.7109605,16.3333128557,zero_total_macroscopic_tensor
+BiOBr,119.41225,58.98910,23.28997,27.53344,20.87230,53.91577,7.349350,5.412787,43.333285,4.549269,50.682635,9.962056,477.9831160,13.1605194454,zero_total_macroscopic_tensor
+BiOI,104.39785,43.26157,17.43010,30.56873,15.22193,43.63316,8.819431,6.236875,46.159658,3.291062,54.979089,9.527937,649.6692759,19.8595646843,zero_total_macroscopic_tensor

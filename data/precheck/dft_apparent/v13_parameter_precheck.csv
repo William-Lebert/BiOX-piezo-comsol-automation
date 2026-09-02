@@ -1,0 +1,4 @@
+﻿material,d11_reported_pm_per_V,d11_derived_pm_per_V,d31_reported_pm_per_V,d31_derived_pm_per_V,pfm_d33_app_pm_per_V,pfm_sd_pm_per_V,pfm_relative_to_BiOCl,effective_thickness_nm,epsilon_status,effective_c11_Pa,effective_e31_C_per_m2,epsilon_r_zz
+BiOCl,not_applicable,not_applicable,not_applicable,not_applicable,315.7109605,6.1263253,1,1,DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved,1.3611658e+11,0,13.119965
+BiOBr,not_applicable,not_applicable,not_applicable,not_applicable,477.983116,6.7741138,1.513989616,1,DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved,1.1941225e+11,0,9.962056
+BiOI,not_applicable,not_applicable,not_applicable,not_applicable,649.6692759,9.3258394,2.05779766,1,DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved,1.0439785e+11,0,9.527937

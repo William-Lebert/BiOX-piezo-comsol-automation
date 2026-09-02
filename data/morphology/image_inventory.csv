@@ -1,0 +1,95 @@
+﻿material,image_type,archive_path,sha256,data_size,pixel_size_nm_per_pixel,fov_um,magnification,accelerating_voltage,condition,scale_bar_um,measured_major_um,measured_minor_um,measured_thickness_nm,measurement_status
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5405.tif,be6e61a8e53f3a13caa64223343344ecc22b5d45210d06135b1cfa9b59264940,1280x960,1.984375,2.54,50000,5000 Volt,Vacc=5.00kV Mag=x50.0k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5406.tif,855b4c75b37d2a8bd42b1819600d404054716ba0d16b74723edccb5c2d5d7937,1280x960,0.9921875,1.27,100000,5000 Volt,Vacc=5.00kV Mag=x100k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5407.tif,dd14925dc42be0fd781c1e21e786be167c18a03e407c29d54a61110bcaf3842e,1280x960,3.307292,4.23,30000,5000 Volt,Vacc=5.00kV Mag=x30.0k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5408.tif,819220365abfcf20231c049fe5407654b4e6aa9086fb34b86453d9083102ca0b,1280x960,19.84375,25.4,5000,5000 Volt,Vacc=5.00kV Mag=x5.00k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5409.tif,0a74ee04bed057f1bf75c5072f2c5b86b46590f1fc85e30abb4b28227daf17b3,1280x960,9.921875,12.7,10000,5000 Volt,Vacc=5.00kV Mag=x10.0k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5410.tif,0f6f9d5f7e69146af25d1743cc9438b5f2dc6e4595f71c056415185d566d33f7,1280x960,1.984375,2.54,50000,5000 Volt,Vacc=5.00kV Mag=x50.0k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5411.tif,06b3f9e94c1a4656d02ae777c681529391e853196cb4f647ac49da5d97d3a817,1280x960,3.307292,4.23,30000,5000 Volt,Vacc=5.00kV Mag=x30.0k WD=9.0mm,,,,,pending_manual_annotation
+BiOBr,SEM,SEM/20260310-SEM/2-Br-SEM/5_5418.tif,5ca1c528cf6098f25d27b34ae934e92c63b36ea189a26bac2e800e580ccff31d,1280x960,4.960938,6.35,20000,20000 Volt,Vacc=20.00kV Mag=x20.0k WD=14.5mm,,,,,pending_manual_annotation
+BiOBr,TEM,TEM/数据处理/BiOBr/1-1.dm3,60a7e4a079b668b9e0d9858350f68342ce76a419bb39471fc4519e600a00fff0,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-1.tif,89bb567874d99ab9849042a085dca409b1ee0c0a0de2b0b78dbc1eff74c9854e,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-10.dm3,c3d614b448df1bc36217d6f1385889c08cb2a750b99c39dd3db780f5cbe4a331,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-10.tif,6a1cf4171127dc350987f34c4d40527d3b466dd0765c802347dfb5d374d1e10b,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-2.dm3,d0c326b4d2c4b557ddcde4f178b8ce153dd1059f83e31030ee8657b93f40c1ba,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-2.tif,ec39406a3f4bcaac6f51ea930c8c430be0975ff49284787198a00034f4fa10bc,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-3.dm3,d81769abbe6190b08d6357975accc9ec687a43bb313ee0f2f7d137910e01616e,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-3.tif,a916bc3f452a5ca8cb0602168c61cbe1eeac32be46e48f204d18ec3e9b2f3f44,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-4.dm3,215df27137b3382dabdab99f5464e02cc0679be982fd99c74726ed3131582834,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-4.tif,7aa6849ef3b0d58031731d7469972be19664aba8fdd75c481483ea96231c9216,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-5.dm3,3d4d14c8cca4e5be22dc6f14dfa945e5e846c23baa7d5ba526524cde8818064f,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-5.tif,8c9bc1682e4d07c7b71b746b7cac8bfa8fb7bd4a1022558a7e5ec02ef317985a,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-6.dm3,6c899500095232094a5a6778323f23492890fbdaad1655eaf6129e61695bb725,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-6.tif,edadde79e4d05d882954a2b91b56448fa11e3e0802a2ffa13afe5c14065b2db0,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-7.dm3,ec71b57078fa4948509926c68e8939d747ec5186e92282ae8c15fce2a7e7e5ad,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-7.tif,a331337799583555d1dcb38303bbe63d1df450b26414fb8e33c3dcb157dee765,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-8.dm3,0f573de284ede3f568039583a72372f0cf5a03292235baa6d060c8f7ca956658,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-8.tif,34c2ccfb8b9ad8aeb77f1775e916b7e93e80d7ecbe5a121e2799b22195b8fea2,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-9.dm3,92ddb3b914810b4ae3b5e8797ca6d7f451f38768790753163ea0e505718a4216,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1-9.tif,36d50f2e051966091371973546045e9becc6f0e401a18249ed77cc62a7e05876,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1.dm3,9d17c01f9815d932ac2ca1cc2bab21d4b7f0c5b87e8ec9a7b49a9243994c8bb3,,,,,,,,,,,scale_bar_manual
+BiOBr,TEM,TEM/数据处理/BiOBr/1.tif,c6bd09863da29814e508a492613a463719bbb792d2d760929b3c0d32f39d0811,,,,,,,,,,,scale_bar_manual
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5398.tif,ca7e6797dc4d3fca2b8ec9183ca45cea5613de27f6be91bcc99f4696329d9499,1280x960,0.9921875,1.27,100000,5000 Volt,Vacc=5.00kV Mag=x100k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5399.tif,007a5261fece2a6bb89bd6cdacb5cac7fc7bba906264d656c90d15ee96c26947,1280x960,1.984375,2.54,50000,5000 Volt,Vacc=5.00kV Mag=x50.0k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5400.tif,e3513048d8bb73635319c3a060babcadd6b74487d3ee36d1d812ded90fff2111,1280x960,0.9921875,1.27,100000,5000 Volt,Vacc=5.00kV Mag=x100k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5401.tif,7069af0b792b9f79e2b9e2b24804d180b4e1ef97bc517b3c2e83460f4c83cba2,1280x960,1.984375,2.54,50000,5000 Volt,Vacc=5.00kV Mag=x50.0k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5402.tif,dfc71e671e5b39608e85b81f5984b8d3c50f1f0a88331bb77516fc08f9f3a583,1280x960,3.307292,4.23,30000,5000 Volt,Vacc=5.00kV Mag=x30.0k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5403.tif,d73c4045bf7a834199170cba7dba620fce3c2bbdc157e715ea77db747d9a68c6,1280x960,3.307292,4.23,30000,5000 Volt,Vacc=5.00kV Mag=x30.0k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5404.tif,3f60af963f0964fe7d0389269e7a7dd11436ace930447ea1e392adf8888764fe,1280x960,19.84375,25.4,5000,5000 Volt,Vacc=5.00kV Mag=x5.00k WD=9.1mm,,,,,pending_manual_annotation
+BiOCl,SEM,SEM/20260310-SEM/1-Cl-SEM/4_5417.tif,ec06104c7286b85e0a9d5a0e2e8677c3d6e5a37afab7ec515e978ecafc596583,1280x960,4.960938,6.35,20000,20000 Volt,Vacc=20.00kV Mag=x20.0k WD=14.6mm,,,,,pending_manual_annotation
+BiOCl,TEM,TEM/数据处理/BiOCl/2-1.dm3,39d62e7dc52cd3af7f0fa1389f8395a371364e178c2e1f1a13f0e103ea45321c,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-1.tif,5637f25df0dade49e7a4bdf060133b2dfd30d1bcdc99a3a7d47a61a788c667e0,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-2.dm3,df55d585f7d6be9cd52392e32f5c98774b8e621fde07d6ac4b9ab35e02bc813d,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-2.tif,4148bc3c676c5fb20946702d788ca30967b8f9e3bdb4abadf87738ac081e126f,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-3.dm3,7ff02536a450a081728966cf80fd872d128528f806af6f681b2a96647d396133,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-3.tif,919a20d5cf698573ad9566890607cd21ab7ab9d0790446b0c7139d99b0f15457,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-4.dm3,cad074bd12594be001e5d99aa93b83ce81485cb455a0c8be6e78a27e7fdc236a,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-4.tif,e268cc54c89b599282a317eb972bbbd4efc50f865e0531b546f85875f8f29b0e,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-5.dm3,2bb4b9567ab4c11061dbffbef4349c06398e1b97756d6c370389fc8328f96872,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-5.tif,bcde3cb0310361abd609434eba83c95816c8fea5ea9b21ecbd564cf0289bb6d3,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-6.dm3,acc08acdfd14d802df5275018cd9a6fb822c048040c500af6cfd0b66ff96cb6d,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-6.tif,2e03a6b485148101b8d71ae1cdb07f421b3777493173e53b8bcefebcff6e6b2e,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-7.dm3,d2b430114110476e16096d3f156228a8b4a61c0199b7cd4f49ebb02972487d63,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-7.tif,c87a925d4e6e9b8b3f219f37244d0ab4fbf774973e88c085bf39fb4519ca1847,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-8.dm3,6f22ddf4adc005fd2105c2c9aa6b1bea2002ddff9e0d38efe04d2edc77c9acf3,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-8.tif,b64277be7cbd3a68b482e5cac8d109b287da20b83b5a31af895d1f401589e134,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-9.dm3,a57cd0fb4c5b0aec0d0a788ad512ab38b1e6d8fc32cf537e27d1fcdb665fee0f,,,,,,,,,,,scale_bar_manual
+BiOCl,TEM,TEM/数据处理/BiOCl/2-9.tif,88e77d4e839819b23ab7201d84d5345e3e7fa0a37af017342e389ac940597df9,,,,,,,,,,,scale_bar_manual
+BiOI,SEM,SEM/20260310-SEM/3-I-SEM/6_5412.tif,567747cab3245c9131d2aaa34ce1861907d557db72788d0a360ca170975d29fa,1280x960,9.921875,12.7,10000,5000 Volt,Vacc=5.00kV Mag=x10.0k WD=8.9mm,,,,,pending_manual_annotation
+BiOI,SEM,SEM/20260310-SEM/3-I-SEM/6_5413.tif,4b32ff8e018bf718d933db07789fbb75227629f312181bd97ffd901223df390c,1280x960,49.60938,63.5,2000,5000 Volt,Vacc=5.00kV Mag=x2.00k WD=8.9mm,,,,,pending_manual_annotation
+BiOI,SEM,SEM/20260310-SEM/3-I-SEM/6_5414.tif,bb2396694919ee6e40810f99d1cae28a75cc3fb3751f8e94c417615a1406bf35,1280x960,9.921875,12.7,10000,5000 Volt,Vacc=5.00kV Mag=x10.0k WD=8.9mm,,,,,pending_manual_annotation
+BiOI,SEM,SEM/20260310-SEM/3-I-SEM/6_5419.tif,eeb5bc5f1c1e52003b67026e11168d87e4efc1cc1f74387d438f0723c46a1639,1280x960,4.960938,6.35,20000,20000 Volt,Vacc=20.00kV Mag=x20.0k WD=14.4mm,,,,,pending_manual_annotation
+BiOI,TEM,TEM/数据处理/BiOI/2-1.dm3,9f4f7551456c355f90f0c9dd74c78722ae2302d7de2150c00d324fa5dc147e02,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-1.tif,09129ab9a3167716a4054111472bccb4fbbfdb8f7a6f91da22eb0ce50ee8eeef,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-10.dm3,c1ecddcc698940b0fb2769c95c8ce22f5e0edfd2bb8e7199673c0a954fd0a8a6,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-10.tif,fbe4bb3a2f20731e7ab6b55799535f8b8946d288f99012af0f13971d51c4a75a,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-11.dm3,881a5e3631ac156d9d4dc81b83e9423fbb0d16ce1c09d406aac10d071d71f36f,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-11.tif,d559618e892e4ad126512e9ed047534d46130191f1ef3e1d1fca6d9ce074bb27,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-12.dm3,fa56fc26f9e9fe7f882c5336e9800094499250fc6303b6f79fb96819715f7680,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-12.tif,1f03bf00ca92c89a2ba70d5589c040fb3342ca688fc3c5188350fd534c1748f3,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-13.dm3,4ad839e2aede804f79b81a22467c305158d7900e46c5cc3a226b1470980ec28b,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-13.tif,3c260d454e1166690dd45effb842dc9357dd815e03ac665f407309f671728a2b,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-14.dm3,446b72b35ef0fdae3b8505976ebac45819e0d7720df9ab30fe2845f1f7b7bf5b,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-14.tif,ebb279431401b7bb49f13b510479d4cd23e32ae8a36e4abebc816ccbf0acc394,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-15.dm3,e3613b3787cfa4568b1c64aee768ba026c783fba49b9b2a4e6f18fd66a230f64,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-15.tif,f955cdfb307742cec6ba0eef670b838fbd2ce502abcaf1c7d75bf4ab3e23f10b,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-16.dm3,4cb6bb03a5ecc5a9263226b74b0c1110dcb1adf06f5809c72701d12461329e43,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-16.tif,9ff4de81880626aa39af23a72f7d6793a18b1abe804b2e8ccf0cf882a184209f,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-17.dm3,2e7673bb44fa8e26bb39365ca9f78f8d93666ce2db25a16920a5094596893a41,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-17.tif,951d3fc56a4e0e82db8b22811e78491c2efe9763778970c72115d9edc7157992,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-2.dm3,dd7dfe20d04418b24e1b16a6dac9e48eed6315a0b2bc1947243bfb5fdf231c84,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-2.tif,93dcc31e59d9bfa7e0dd9a368901395f6992d0e7e04c650f149fae230051b471,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-3.dm3,f4a6fb7acbbf48cd224a5c954b1f96bd6104ce55d39c106b93c1bb95e59d570f,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-3.tif,3f82c9332adb39a3011e4a8b06ec23e8749ce002907a651fa939c74d19f8b7b1,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-4.dm3,f04ad6d24a54441888b7f099c517a84b953310833ff7a73b4ca639bfab44ca05,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-4.tif,053ffdf2bbfc82a95512f4424ced5a50d842e6d577ae63568769deb42895ed61,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-5.dm3,2a9bf5544cd15d22fceda2cd051a91789a5b7d3570e3f263e166b55306dc2ff3,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-5.tif,17e08424a472752fb9b9cece3fc4b93eb6ec9f86a4c318281a2f5153bc2d3419,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-6.dm3,f33cc39bdb54ace7bb9e483631291abf60577990a30452f011316bd224bfd27a,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-6.tif,3dd9c962480d00819dac75157d7e964f7e037e512cce0be42fdc716fc050440a,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-7.dm3,2f3c28f1e38bb924629e0121239c615201b2d392b4303465c77185b0a674231d,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-7.tif,8f1815384639365c7a5678af143e3afb64d0cd9fadccfaa038f8c3259515ee04,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-8.dm3,261750479f1fced1c67c76c4414edabf04de7f4df622ec9c3c316e981b7a8251,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-8.tif,8b5a9cf368914e275da8f35b57bc3460a0d183f526d51bbbb76b7557f3123abe,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-9.dm3,4da5169aad7874f78d3d7b7248cc5d2651057df36c8d4c467e53fd65bc08b95f,,,,,,,,,,,scale_bar_manual
+BiOI,TEM,TEM/数据处理/BiOI/2-9.tif,b29c0c7c3fc5ea5c95c027374c7e47326c02510c5049583a362418e0001c9fac,,,,,,,,,,,scale_bar_manual

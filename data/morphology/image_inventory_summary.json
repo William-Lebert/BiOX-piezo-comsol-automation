@@ -1,0 +1,31 @@
+{
+  "archive": "C:\\Users\\濮晓宇\\Desktop\\SEM-TEM.zip",
+  "n_images": 94,
+  "materials": {
+    "BiOBr": {
+      "SEM": 8,
+      "TEM": 22,
+      "sem_fov_range_um": [
+        1.27,
+        25.4
+      ]
+    },
+    "BiOCl": {
+      "SEM": 8,
+      "TEM": 18,
+      "sem_fov_range_um": [
+        1.27,
+        25.4
+      ]
+    },
+    "BiOI": {
+      "SEM": 4,
+      "TEM": 34,
+      "sem_fov_range_um": [
+        6.35,
+        63.5
+      ]
+    }
+  },
+  "measurement_policy": "scale metadata are recorded; particle dimensions remain manual/validated inputs"
+}

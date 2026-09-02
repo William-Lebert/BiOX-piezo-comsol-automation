@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.3.0-dft-apparent",
+  "description": "DFT elastic/dielectric inputs combined with measured SSPFM apparent normal response. The apparent e33 channel is a measurement-level closure and is not an intrinsic bulk piezoelectric tensor.",
+  "provenance": {
+    "archive": "E:/仓库/我的体系/压电有限元仿真/BiOX_FEA_DFT.zip",
+    "electronic_dielectric": "VASP OUTCAR: MACROSCOPIC STATIC DIELECTRIC TENSOR (including local field effects in DFT)",
+    "ionic_dielectric": "VASP OUTCAR: MACROSCOPIC STATIC DIELECTRIC TENSOR IONIC CONTRIBUTION",
+    "elastic": "VASP OUTCAR: TOTAL ELASTIC MODULI (kBar), converted with 1 kBar = 1e8 Pa",
+    "piezoelectric": "VASP OUTCAR: PIEZOELECTRIC TENSOR (including local field effects); total macroscopic tensor is zero for the supplied centrosymmetric calculations",
+    "pfm_targets": "Measured SSPFM reanalysis retained in the project materials record"
+  },
+  "tensor_convention": {
+    "constitutive_law": "T = cE*S - transpose(e)*E; D = e*S + epsilon0*epsilonrS*E",
+    "voigt_3d_comsol": ["xx", "yy", "zz", "yz", "xz", "xy"],
+    "cE_units": "Pa",
+    "e_units": "C/m^2",
+    "epsilon_units": "relative permittivity"
+  },
+  "materials": {
+    "BiOCl": {
+      "lattice_a_A": 3.9039482178,
+      "bandgap_eV": 2.67,
+      "bandgap_status": "metadata_only_not_used_in_electromechanical_solve",
+      "cE_3d_Pa": [
+        [136116580000.0, 69814270000.0, 36901130000.0, 0.0, 0.0, 0.0],
+        [69814270000.0, 136116580000.0, 36901130000.0, 0.0, 0.0, 0.0],
+        [36901130000.0, 36901130000.0, 51735020000.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 26223900000.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 26223940000.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 60574100000.0]
+      ],
+      "epsilon_r_electronic_diag": [6.568797, 6.568797, 5.224847],
+      "epsilon_r_ionic_diag": [43.59426, 43.59426, 7.895118],
+      "epsilon_r_low_frequency_diag": [50.163057, 50.163057, 13.119965],
+      "dft_piezo_total_e_C_per_m2": [
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      ],
+      "dft_piezo_status": "zero_total_macroscopic_tensor_not_used_as_apparent_PFM_coupling",
+      "apparent_e33_C_per_m2": 16.33331285568671,
+      "apparent_e33_formula": "d33_app_pm_per_V * C33_E_Pa * 1e-12",
+      "constitutive_status": "DFT_CE_epsilon_plus_measured_apparent_PFM_e33",
+      "epsilon_status": "DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved",
+      "pfm_target": {"d33_app_pm_per_V": 315.7109605, "sd_pm_per_V": 6.1263253, "n_cycles": 4}
+    },
+    "BiOBr": {
+      "lattice_a_A": 3.9319186306,
+      "bandgap_eV": 2.58,
+      "bandgap_status": "metadata_only_not_used_in_electromechanical_solve",
+      "cE_3d_Pa": [
+        [119412250000.0, 58989100000.0, 23289970000.0, 0.0, 0.0, 0.0],
+        [58989100000.0, 119412250000.0, 23289970000.0, 0.0, 0.0, 0.0],
+        [23289970000.0, 23289970000.0, 27533440000.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 20872300000.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 20872280000.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 53915770000.0]
+      ],
+      "epsilon_r_electronic_diag": [7.34935, 7.34935, 5.412787],
+      "epsilon_r_ionic_diag": [43.333285, 43.333285, 4.549269],
+      "epsilon_r_low_frequency_diag": [50.682635, 50.682635, 9.962056],
+      "dft_piezo_total_e_C_per_m2": [
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      ],
+      "dft_piezo_status": "zero_total_macroscopic_tensor_not_used_as_apparent_PFM_coupling",
+      "apparent_e33_C_per_m2": 13.16051944539904,
+      "apparent_e33_formula": "d33_app_pm_per_V * C33_E_Pa * 1e-12",
+      "constitutive_status": "DFT_CE_epsilon_plus_measured_apparent_PFM_e33",
+      "epsilon_status": "DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved",
+      "pfm_target": {"d33_app_pm_per_V": 477.983116, "sd_pm_per_V": 6.7741138, "n_cycles": 4}
+    },
+    "BiOI": {
+      "lattice_a_A": 3.9991544289,
+      "bandgap_eV": 1.74,
+      "bandgap_status": "metadata_only_not_used_in_electromechanical_solve",
+      "cE_3d_Pa": [
+        [104397850000.0, 43261570000.0, 17430100000.0, 0.0, 0.0, 0.0],
+        [43261570000.0, 104397850000.0, 17430100000.0, 0.0, 0.0, 0.0],
+        [17430100000.0, 17430100000.0, 30568730000.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 15221930000.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 15221970000.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 43633160000.0]
+      ],
+      "epsilon_r_electronic_diag": [8.819431, 8.819431, 6.236875],
+      "epsilon_r_ionic_diag": [46.159658, 46.159658, 3.291062],
+      "epsilon_r_low_frequency_diag": [54.979089, 54.979089, 9.527937],
+      "dft_piezo_total_e_C_per_m2": [
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      ],
+      "dft_piezo_status": "zero_total_macroscopic_tensor_not_used_as_apparent_PFM_coupling",
+      "apparent_e33_C_per_m2": 19.859564684282606,
+      "apparent_e33_formula": "d33_app_pm_per_V * C33_E_Pa * 1e-12",
+      "constitutive_status": "DFT_CE_epsilon_plus_measured_apparent_PFM_e33",
+      "epsilon_status": "DFT electronic plus ionic low-frequency sum; frequency dispersion is not resolved",
+      "pfm_target": {"d33_app_pm_per_V": 649.6692759, "sd_pm_per_V": 9.3258394, "n_cycles": 4}
+    }
+  }
+}

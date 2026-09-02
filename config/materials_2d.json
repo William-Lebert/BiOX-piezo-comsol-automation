@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.3.0-pfm-anchored",
+  "description": "Literature-traceable 2D Janus BiOX parameters and PFM validation targets.",
+  "tensor_convention": {
+    "stress_charge": "T = cE*S - transpose(e)*E; D = e*S + epsilon0*epsilonrS*E",
+    "voigt_3d_comsol": ["xx", "yy", "zz", "yz", "xz", "xy"],
+    "voigt_2d": ["xx", "yy", "xy_engineering"],
+    "e2d_rows": ["Px", "Py", "Pz"],
+    "e2d_units": "pC/m",
+    "c2d_units": "N/m",
+    "effective_3d_conversion": "c3d = c2d/t_eff and e3d = e2d/t_eff; t_eff is an explicit sensitivity parameter"
+  },
+  "reference_sources": {
+    "li2022": {
+      "title": "High in-plane piezoelectricity of two-dimensional Janus BiOX (X = Cl, Br, and I) monolayers",
+      "doi": "10.1016/j.matlet.2022.132867",
+      "file": "C:/Users/濮晓宇/Documents/zotero/2026.8.27BiOX计算借鉴/Li 等 - 2022 - High in-plane piezoelectricity of two-dimensional Janus BiOX (X = Cl, Br, and I) monolayers.pdf",
+      "use": "intrinsic 2D reference; not a directly validated bulk-pellet tensor"
+    },
+    "pfm_reanalysis": {
+      "file": "../BiOX_PFM_Coefficient_Reanalysis/report/PFM_Coefficient_Recalculation_Report.md",
+      "use": "apparent SSPFM validation targets; not intrinsic tensor constants"
+    }
+  },
+  "materials": {
+    "BiOCl": {
+      "lattice_a_A": 3.76,
+      "bandgap_eV": 2.67,
+      "c2d_N_per_m": [[51.27, 24.15, 0.0], [24.15, 51.27, 0.0], [0.0, 0.0, 13.56]],
+      "e2d_pC_per_m": [[683.72, -683.72, 0.0], [0.0, 0.0, -341.86], [15.66, 15.66, 0.0]],
+      "d2d_reported_pm_per_V": {"d11": 25.21, "d31": 0.21},
+      "epsilon_r_s_sensitivity_diag": [6.568797, 6.568797, 5.224847],
+      "epsilon_status": "legacy VASP electronic values; sensitivity only, not supplied by Li 2022",
+      "pfm_target": {"d33_app_pm_per_V": 315.7109605, "sd_pm_per_V": 6.1263253, "n_cycles": 4}
+    },
+    "BiOBr": {
+      "lattice_a_A": 3.79,
+      "bandgap_eV": 2.58,
+      "c2d_N_per_m": [[52.30, 25.68, 0.0], [25.68, 52.30, 0.0], [0.0, 0.0, 13.31]],
+      "e2d_pC_per_m": [[786.12, -786.12, 0.0], [0.0, 0.0, -393.06], [7.92, 7.92, 0.0]],
+      "d2d_reported_pm_per_V": {"d11": 29.53, "d31": 0.10},
+      "epsilon_r_s_sensitivity_diag": [7.349350, 7.349350, 5.412787],
+      "epsilon_status": "legacy VASP electronic values; sensitivity only, not supplied by Li 2022",
+      "pfm_target": {"d33_app_pm_per_V": 477.9831160, "sd_pm_per_V": 6.7741138, "n_cycles": 4}
+    },
+    "BiOI": {
+      "lattice_a_A": 3.86,
+      "bandgap_eV": 1.74,
+      "c2d_N_per_m": [[56.59, 29.10, 0.0], [29.10, 56.59, 0.0], [0.0, 0.0, 13.745]],
+      "e2d_pC_per_m": [[944.62, -944.62, 0.0], [0.0, 0.0, -472.31], [10.44, 10.44, 0.0]],
+      "d2d_reported_pm_per_V": {"d11": 34.36, "d31": 0.12},
+      "epsilon_r_s_sensitivity_diag": [8.819431, 8.819431, 6.236875],
+      "epsilon_status": "legacy VASP electronic values; sensitivity only, not supplied by Li 2022",
+      "pfm_target": {"d33_app_pm_per_V": 649.6692759, "sd_pm_per_V": 9.3258394, "n_cycles": 4}
+    }
+  }
+}

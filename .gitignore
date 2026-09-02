@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+comsol_run/
+outputs/
+tmp/
+*.mph
+*.log
+*.lock
+
+# Keep the reusable template in the public release; exclude solved MPH files.
+!model/BiOCl_piezo_template.mph
