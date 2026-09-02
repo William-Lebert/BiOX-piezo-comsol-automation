@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22259442.svg)](https://doi.org/10.5281/zenodo.22259442)
+
 # DFT-informed apparent piezoelectric response of BiOX
 
 This repository contains a reproducible COMSOL Multiphysics 6.3 workflow for
